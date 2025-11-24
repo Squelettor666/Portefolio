@@ -2,34 +2,19 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilité avec anciens navigateurs -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Accueil - Mon Portfolio</title>
-
-    <!-- SEO et métadonnées -->
-    <meta name="description" content="Découvrez le portfolio de Dworld, développeur web passionné. Projets innovants et contact direct.">
-    <meta name="keywords" content="portfolio, développeur web, projets, CV, Dworld">
-    <meta name="author" content="Dworld">
-
-    <!-- Réseaux sociaux (Open Graph) -->
-    <meta property="og:title" content="Accueil - Mon Portfolio">
-    <meta property="og:description" content="Découvrez le portfolio de Dworld, développeur web passionné.">
-    <meta property="og:image" content="https://cdn.pixabay.com/photo/2025/10/31/17/37/winter-9929460_1280.png">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://votre-site.com">
-
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Ajout de méta description pour le SEO -->
+    <meta name="description" content="Bienvenue sur le portfolio de Dworld, développeur web passionné. Découvrez mes projets et téléchargez mon CV.">
+    <!-- Ajout de favicon pour un meilleur rendu dans l'onglet du navigateur -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <!-- Barre de navigation -->
     <nav>
         <div class="logo">Mon Portfolio</div>
-        <div>
+        <div class="nav-links">
             <a href="index.html">Accueil</a>
             <a href="projets.html">Projets</a>
             <a href="contact.html">Contact</a>
@@ -39,15 +24,24 @@
     <!-- Contenu principal -->
     <main class="container">
         <h1>Bienvenue sur mon site !</h1>
-        <img src="https://cdn.pixabay.com/photo/2025/10/31/17/37/winter-9929460_1280.png" alt="Ma photo">
-        <p>Bonjour ! Je m'appelle Dworld. Je suis passionné par le développement web et j'aime créer des projets innovants. Sur ce site, vous pouvez découvrir mes projets et me contacter directement.</p>
+        <!-- Ajout de classes pour faciliter le style -->
+        <img src="https://cdn.pixabay.com/photo/2025/10/31/17/37/winter-9929460_1280.png" alt="Ma photo" class="profile-photo">
+        <p>Bonjour ! Je m'appelle <strong>Dworld</strong>. Je suis passionné par le développement web et j'aime créer des projets innovants. Sur ce site, vous pouvez découvrir mes projets et me contacter directement. Je suis toujours à la recherche de nouvelles opportunités pour améliorer mes compétences et relever des défis techniques intéressants.</p>
+        <!-- Bouton de téléchargement CV -->
         <a href="cv.pdf" class="cv-button" download>Télécharger mon CV</a>
     </main>
 
+    <!-- Pied de page -->
     <footer>
-        &copy; 2025 Mon Portfolio
+        <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
+        <!-- Possibilité d'ajouter des liens sociaux -->
+        <div class="social-links">
+            <a href="https://github.com/votreprofil" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://linkedin.com/in/votreprofil" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
     </footer>
+
+    <!-- Ajout d'un script optionnel pour l'interactivité -->
+    <script src="script.js"></script>
 </body>
 </html>
-
-
