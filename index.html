@@ -1,48 +1,33 @@
-<nav>
-    <div class="logo">MonPortfolio</div>
-    <div class="menu">
-        <a href="#" data-page="home">Accueil</a>
-        <a href="#" data-page="projects">Projets</a>
-        <a href="#" data-page="contact">Contact</a>
-    </div>
-</nav>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav>
+        <div class="logo">Mon Portfolio</div>
+        <div>
+            <a href="index.html">Accueil</a>
+            <a href="projets.html">Projets</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
 
-<!-- PAGE ACCUEIL -->
-<section id="home" class="page active">
+    <!-- Contenu principal -->
     <div class="container">
         <h1>Bienvenue sur mon site !</h1>
-        <img src="https://cdn.pixabay.com/photo/2025/10/31/17/37/winter-9929460_1280.png" alt="photo">
-        <p>Je suis Squelettor, développeur web passionné par les interfaces modernes et animées.</p>
+        <img src="https://cdn.pixabay.com/photo/2025/10/31/17/37/winter-9929460_1280.png" alt="Ma photo">
+        <p>Bonjour ! Je m'appelle Dworld. Je suis passionné par le développement web et j'aime créer des projets innovants. Sur ce site, vous pouvez découvrir mes projets et me contacter directement.</p>
         <a href="cv.pdf" class="cv-button" download>Télécharger mon CV</a>
     </div>
-</section>
 
-<!-- PAGE PROJETS -->
-<section id="projects" class="page">
-    <div class="container">
-        <h1>Mes Projets</h1>
-        <ul>
-            <li><strong>Projet 1 :</strong> Landing page animée.</li>
-            <li><strong>Projet 2 :</strong> Mini-jeu JavaScript.</li>
-            <li><strong>Projet 3 :</strong> Portfolio moderne avec animations.</li>
-        </ul>
-    </div>
-</section>
+    <footer>
+        &copy; 2025 Mon Portfolio
+    </footer>
+</body>
+</html>
 
-<!-- PAGE CONTACT -->
-<section id="contact" class="page">
-    <div class="container">
-        <h1>Contactez-moi</h1>
-        <p>Envoyez-moi un message et je vous répondrai rapidement !</p>
-        <form>
-            <input type="text" placeholder="Votre nom" required>
-            <input type="email" placeholder="Votre email" required>
-            <textarea rows="5" placeholder="Votre message" required></textarea>
-            <button>Envoyer</button>
-        </form>
-    </div>
-</section>
-
-<footer>
-    &copy; 2025 MonPortfolio
-</footer>
