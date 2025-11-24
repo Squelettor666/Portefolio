@@ -1,115 +1,171 @@
-/* Reset basique pour uniformiser les navigateurs */
-* {
+/* --- Styles généraux --- */
+body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212; /* Fond sombre */
+    color: #eee;
 }
 
-/* Corps de page */
-body {
-    background-color: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
+a {
+    text-decoration: none;
 }
 
-/* Barre de navigation */
+/* --- Barre de navigation --- */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: #1e1e2f;
-    color: #fff;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #1f1f1f, #2a2a2a);
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
 
 nav .logo {
-    font-size: 1.5rem;
+    font-size: 1.8em;
     font-weight: bold;
+    color: #ff6ec7;
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 1.5rem;
+    color: #eee;
+    margin-left: 20px;
     font-weight: 500;
-    transition: color 0.3s;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #ff6b6b;
+    color: #ff6ec7;
+    transform: scale(1.05);
 }
 
-/* Conteneur principal */
+/* --- Conteneur principal --- */
 .container {
-    max-width: 900px;
-    margin: 3rem auto;
-    padding: 0 1rem;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* --- Titres et paragraphes --- */
+h1, h2 {
     text-align: center;
+    color: #ff6ec7;
+    margin-bottom: 25px;
 }
 
-.container h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #1e1e2f;
+p {
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.8;
 }
 
-.container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin: 1.5rem 0;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+/* --- Image de profil --- */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 250px;
+    border-radius: 50%;
+    border: 3px solid #ff6ec7;
+    transition: transform 0.3s;
 }
 
-.container p {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    color: #555;
+img:hover {
+    transform: scale(1.05);
 }
 
-/* Bouton CV */
+/* --- Bouton téléchargement CV --- */
 .cv-button {
     display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background-color: #ff6b6b;
-    color: #fff;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: linear-gradient(45deg, #ff6ec7, #6ec1ff);
+    color: #121212;
     font-weight: bold;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 30px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(255,110,199,0.4);
 }
 
 .cv-button:hover {
-    background-color: #ff4b4b;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255,110,199,0.6);
 }
 
-/* Footer */
+/* --- Liste de projets --- */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #2a2a2a;
+    margin: 15px 0;
+    padding: 15px 20px;
+    border-left: 5px solid #ff6ec7;
+    border-radius: 10px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+ul li:hover {
+    transform: scale(1.02);
+    background: #333;
+}
+
+/* --- Formulaire contact --- */
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px 0;
+    border-radius: 8px;
+    border: none;
+    background-color: #2a2a2a;
+    color: #eee;
+}
+
+form button {
+    padding: 12px 20px;
+    background: linear-gradient(45deg, #ff6ec7, #6ec1ff);
+    color: #121212;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255,110,199,0.6);
+}
+
+/* --- Footer --- */
 footer {
     text-align: center;
-    padding: 1.5rem 0;
-    background-color: #1e1e2f;
-    color: #fff;
-    margin-top: 3rem;
+    padding: 20px;
+    margin-top: 40px;
+    background: #1f1f1f;
+    color: #aaa;
 }
 
-/* Responsive pour petits écrans */
+/* --- Responsive --- */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
-        gap: 1rem;
+        align-items: flex-start;
     }
 
     nav a {
-        margin-left: 0;
+        margin: 10px 0 0 0;
     }
 
-    .container h1 {
-        font-size: 2rem;
+    .container {
+        margin: 20px;
+        padding: 20px;
     }
 }
